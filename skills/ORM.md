@@ -182,3 +182,16 @@
    ```
 
    * 注意：这里最合适的方式是：结合使用 flask-migrate && flask-script 两大插件！
+
+3. 数据库表创建 与 数据迁移 命令
+
+   ```shell
+   # 表初始化(表创建)
+   $ python manage.py db init 
+   
+   # 数据库中 数据迁移
+   $ python manage.py db migrate
+   $ python manage.py db upgrade
+   ```
+
+   

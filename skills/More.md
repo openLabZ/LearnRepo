@@ -41,6 +41,41 @@
   $ sudo pip3 install flask_sqlalchemy
   $ sudo pip3 install flask_script
   $ sudo pip3 install flask_migrate
+  
+  # 还得安装 SQLAlchemy 与 MySQL 之间连接的驱动 
+  ❌ (mysql-python 不支持 python3)
+  ✅ mysql-connector
+  $sudo pip3 install mysql-connector
   ```
 
-  
+  * [Python操作MySQL之SQLAlchemy](https://www.cnblogs.com/ccorz/p/5711955.html)
+
+    ```
+    [MySQL-Python]
+    mysql+mysqldb://<user>:<password>@<host>[:<port>]/<dbname>
+    
+    [MySQL-Connector]
+    mysql+mysqlconnector://<user>:<password>@<host>[:<port>]/<dbname>
+    
+    [pymysql]
+    mysql+pymysql://<username>:<password>@<host>/<dbname>[?<options>]
+        
+    [cx_Oracle]
+    oracle+cx_oracle://user:pass@host:port/dbname[?key=value&key=value...]
+    ```
+
+  * 连接过程中报错解决：
+
+    ```
+    问题现象：Can't connect to mysql server on '127.0.0.1' (61) - (MacOS)
+    ERROR 2003 (HY000) Can't connect to MySQL server on '<remote-ip>' (61)
+    
+    解决方法：重启 Mysql Server
+    
+    1. 命令行中停止mysql服务：
+    sudo /usr/local/mysql/bin/mysqladmin -u root -proot shutdown
+    2. 系统偏好设置 > MySQL
+    Start MySQL Server
+    ```
+
+    
