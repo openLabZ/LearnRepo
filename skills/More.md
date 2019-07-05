@@ -45,7 +45,10 @@
   # 还得安装 SQLAlchemy 与 MySQL 之间连接的驱动 
   ❌ (mysql-python 不支持 python3)
   ✅ mysql-connector
+  * Mac / 类 Unix
   $sudo pip3 install mysql-connector
+  * Windows
+  $pip install mysql-connector-python
   ```
 
   * [Python操作MySQL之SQLAlchemy](https://www.cnblogs.com/ccorz/p/5711955.html)
