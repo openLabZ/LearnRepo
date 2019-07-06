@@ -4,6 +4,6 @@
 
 {% block content %}
 <div class="row">
-	<p>这是首页 from zcc</p>
+	<p>这是首页 from {{ session.get('telephone') }}</p>
 </div>
 {% endblock %}

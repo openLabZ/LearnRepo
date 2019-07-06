@@ -20,3 +20,4 @@ DB_URI      = 'mysql+mysqlconnector://{}:{}@{}:{}/{}?charset=utf8'.format(USERNA
                                                                    HOSTNAME, PORT, DATABASE)
 SQLALCHEMY_DATABASE_URI = DB_URI
 
+SQLALCHEMY_TRACK_MODIFICATIONS = False
