@@ -1,15 +1,10 @@
 #!/usr/bin/python3
 # -*- encoding: utf-8 -*-
 
-from flask import Flask
 from flask import render_template, request, redirect, url_for, session
-from configs import config
+from controllers import app
 from models.models import db, User
 from sqlalchemy import and_
-
-app = Flask(__name__)
-app.config.from_object(config)
-db.init_app(app)
 
 
 @app.route('/')
@@ -62,7 +57,3 @@ def register():
                 db.session.add(user)
                 db.session.commit()
                 return redirect(url_for('main.index'))
-
-
-if __name__ == '__main__':
-    app.run(host='127.0.0.1', port='8000')

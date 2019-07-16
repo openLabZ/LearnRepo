@@ -3,8 +3,7 @@ body {
 }
 
 .content {
-	background: #ffffff;
-	width: 800px;
+	padding-left: 30px;
 	margin: 10px auto;
 	overflow: hidden;
 }

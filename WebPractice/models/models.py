@@ -2,7 +2,7 @@
 
 # 用于定义与数据库表一一对应的Python模型
 
-from exts import db
+from models import db
 
 
 class User(db.Model):
