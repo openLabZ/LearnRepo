@@ -1,0 +1,139 @@
+<?xml version="1.0" ?>
+<rpm_delta base="B271.xml" present="B280.xml">
+    <package_name_delta>
+        <rpm name="dophi-ldc-devel">
+            <new_plus>
+                <reason/>
+            </new_plus>
+        </rpm>
+        <rpm name="sec_mng">
+            <new_plus>
+                <reason/>
+            </new_plus>
+        </rpm>
+        <rpm name="sec_agent">
+            <new_plus>
+                <reason/>
+            </new_plus>
+        </rpm>
+        <rpm name="dophi-ldc-libs">
+            <new_plus>
+                <reason/>
+            </new_plus>
+        </rpm>
+    </package_name_delta>
+    <package_file_delta>
+        <rpm name="c-ares">
+            <plus_filelist/>
+            <minus_filelist>
+                <file name="usr/bin/adig">
+                    <reason/>
+                </file>
+                <file name="usr/bin/acountry">
+                    <reason/>
+                </file>
+                <file name="usr/bin/ahost">
+                    <reason/>
+                </file>
+            </minus_filelist>
+            <md5sum_filelist>
+                <file md5from="b4afb783fe2b3a1eb4466d37862caff1" md5to="5cd1089803ea29db8e5190840ff14d32" name="usr/lib/libcares.so.2">
+                    <reason/>
+                </file>
+                <file md5from="b4afb783fe2b3a1eb4466d37862caff1" md5to="5cd1089803ea29db8e5190840ff14d32" name="usr/lib/libcares.so.2.3.0">
+                    <reason/>
+                </file>
+            </md5sum_filelist>
+        </rpm>
+    </package_file_delta>
+    <package_require_delta>
+        <rpm name="c-ares">
+            <rpm_requires>
+                <plus_list/>
+                <minus_list/>
+            </rpm_requires>
+            <file_requires>
+                <file name="usr/lib/libcares.so.2">
+                    <file_req_plus/>
+                    <file_req_minus>
+                        <require name="ld-linux-aarch64.so.1">
+                            <reason/>
+                        </require>
+                    </file_req_minus>
+                </file>
+                <file name="usr/lib/libcares.so.2.3.0">
+                    <file_req_plus/>
+                    <file_req_minus>
+                        <require name="ld-linux-aarch64.so.1">
+                            <reason/>
+                        </require>
+                    </file_req_minus>
+                </file>
+            </file_requires>
+        </rpm>
+        <rpm name="protobuf">
+            <rpm_requires>
+                <plus_list/>
+                <minus_list/>
+            </rpm_requires>
+            <file_requires>
+                <file name="usr/lib/libprotoc.so.3.6.1">
+                    <file_req_plus/>
+                    <file_req_minus>
+                        <require name="ld-linux-aarch64.so.1">
+                            <reason/>
+                        </require>
+                    </file_req_minus>
+                </file>
+                <file name="usr/lib/libprotoc.so">
+                    <file_req_plus/>
+                    <file_req_minus>
+                        <require name="ld-linux-aarch64.so.1">
+                            <reason/>
+                        </require>
+                    </file_req_minus>
+                </file>
+                <file name="usr/lib/libprotobuf-lite.so.3.6.1">
+                    <file_req_plus/>
+                    <file_req_minus>
+                        <require name="ld-linux-aarch64.so.1">
+                            <reason/>
+                        </require>
+                    </file_req_minus>
+                </file>
+                <file name="usr/lib/libprotobuf-lite.so">
+                    <file_req_plus/>
+                    <file_req_minus>
+                        <require name="ld-linux-aarch64.so.1">
+                            <reason/>
+                        </require>
+                    </file_req_minus>
+                </file>
+                <file name="usr/lib/libprotobuf.so">
+                    <file_req_plus/>
+                    <file_req_minus>
+                        <require name="ld-linux-aarch64.so.1">
+                            <reason/>
+                        </require>
+                    </file_req_minus>
+                </file>
+                <file name="usr/lib/libprotobuf.so.3.6.1">
+                    <file_req_plus/>
+                    <file_req_minus>
+                        <require name="ld-linux-aarch64.so.1">
+                            <reason/>
+                        </require>
+                    </file_req_minus>
+                </file>
+                <file name="usr/bin/protoc">
+                    <file_req_plus/>
+                    <file_req_minus>
+                        <require name="ld-linux-aarch64.so.1">
+                            <reason/>
+                        </require>
+                    </file_req_minus>
+                </file>
+            </file_requires>
+        </rpm>
+    </package_require_delta>
+</rpm_delta>
